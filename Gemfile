@@ -8,6 +8,9 @@ gem 'rails', '3.2.8'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+	gem 'guard-rspec'
+	gem 'spork'
+	gem 'guard-spork'
 end
 
 gem 'json'
@@ -28,10 +31,12 @@ gem 'jquery-rails'
 
 group :test do
 	gem 'capybara'
+	gem 'rb-fsevent'
+	gem 'growl'
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg'
 end
 
 # To use ActiveModel has_secure_password
